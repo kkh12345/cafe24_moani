@@ -1,4 +1,4 @@
-# MOANI 가구 쇼핑몰 페이지 (카페24 디자인,폰트,이미지,상품 등 참고)
+![image](https://github.com/user-attachments/assets/7c1cd860-1b3a-4366-b0ee-8a924250dbc6)# MOANI 가구 쇼핑몰 페이지 (카페24 디자인,폰트,이미지,상품 등 참고)
 <br>
 구성 : 메인페이지, 로그인 페이지, 회원가입 페이지, 검색 페이지, SHOP 페이지, LOOKBOOK 페이지, 상품상세 페이지, 리뷰 페이지, 리뷰 상세 페이지
 
@@ -25,12 +25,10 @@
 
 | 헤더                                                                                                    |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345//blob/main/header1.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/header1.png)
 
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/header2.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/header3.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/header2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/header3.png)
 
 
 ####   [ 주요 기능 ]
@@ -43,17 +41,12 @@
 
 | Funiture, Best Item, Home Styling Item, Interior, New In                                                                                                  |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/funiture.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/funiture.png)
 
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/homestyle.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/bestItem.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/interior.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/newIn.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/homestyle.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/bestItem.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/interior.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/newIn.png)
 
 ####   [ 주요 기능 ]
  * 상품 카드,카드 정렬 방식이 각 섹션마다 조금씩 다름
@@ -65,8 +58,7 @@
 
 | Review                                                                                                    |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/review.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/review.png)
 
 
 
@@ -80,8 +72,7 @@
 
 | 메인 페이지 태블릿                                                                                                   |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/tablet.gif)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/tablet.gif)
 
 
  <br><br>
@@ -91,8 +82,7 @@
 
 | Search                                                                                                |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/search.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/search.png)
 
 
 
@@ -109,10 +99,8 @@
 
 | LookBook                                                                                                |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/lookbook1.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/lookbook2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/lookbook1.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/lookbook2.png)
 
 
 
@@ -127,10 +115,8 @@
 
 | Join                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/join.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/join2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/join.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/join2.png)
 
 
 
@@ -147,12 +133,9 @@
 
 | Login                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/login1.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/login2.png)
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/login3.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/login1.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/login2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/login3.png)
 
 
 
@@ -168,8 +151,7 @@
 
 | SHOP                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/cafe24_moani
-/blob/main/shop.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/shop.png)
 
 
 
