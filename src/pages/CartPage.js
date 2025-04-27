@@ -1,13 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import { PagiTitle } from "../StyledComponent";
-import "./CartPage.css";
+import { useEffect, useRef, useState } from 'react';
+import { PagiTitle } from '../StyledComponent';
+import './CartPage.css';
 const CartPage = ({ cartItems, setCartItems }) => {
   const cartRef = useRef();
-
+  const selectAllRef = useRef();
   const [itemCheck, setItemCheck] = useState(null);
   const [selectedCartItems, setSelectedCartItems] = useState(null);
   const [sumPrice, setSumPrice] = useState(0);
-  const getProducts = JSON.parse(localStorage.getItem("products"));
+  const getProducts = JSON.parse(localStorage.getItem('products'));
 
   function sumPriceFn() {
     let sum = 0;
@@ -21,14 +21,19 @@ const CartPage = ({ cartItems, setCartItems }) => {
           sum += a.count * find.discountedPrice;
         }
       });
+
       setSumPrice(sum);
     }
   }
+
   useEffect(() => {
-    cartRef.current.parentElement.children[0].style.position = "relative";
+    cartRef.current.parentElement.children[0].style.position = 'relative';
+  }, []);
+
+  useEffect(() => {
     setItemCheck(Array(cartItems.length).fill(false));
     setSelectedCartItems(Array(cartItems.length).fill(null));
-  }, []);
+  }, [cartItems]);
 
   useEffect(() => {
     sumPriceFn();
@@ -45,8 +50,10 @@ const CartPage = ({ cartItems, setCartItems }) => {
                 <input
                   type="checkbox"
                   className="select-all"
+                  ref={selectAllRef}
                   onChange={(e) => {
-                    let copy = [...itemCheck];
+                    let copy = [...cartItems];
+
                     if (e.target.checked) {
                       setItemCheck(
                         copy.map((a) => {
@@ -54,7 +61,7 @@ const CartPage = ({ cartItems, setCartItems }) => {
                           return a;
                         })
                       );
-                      setSelectedCartItems(cartItems);
+                      setSelectedCartItems(copy);
                     } else {
                       setItemCheck(
                         copy.map((a) => {
@@ -90,6 +97,7 @@ const CartPage = ({ cartItems, setCartItems }) => {
                       type="checkbox"
                       checked={itemCheck[index] ? true : false}
                       onChange={(e) => {
+                        selectAllRef.current.checked = false;
                         let copy = [...itemCheck];
                         let copy2 = [...selectedCartItems];
                         copy[index] = !copy[index];
@@ -122,7 +130,7 @@ const CartPage = ({ cartItems, setCartItems }) => {
                           copy[index].count = parseInt(e.target.value);
                         }
                         setCartItems(copy);
-                        localStorage.setItem("cart", JSON.stringify(copy));
+                        localStorage.setItem('cart', JSON.stringify(copy));
                       }}
                     />
                   </td>
@@ -135,18 +143,18 @@ const CartPage = ({ cartItems, setCartItems }) => {
                     원
                   </td>
                   <td>
-                    {item.size !== undefined ? item.size : "없음"} /{" "}
+                    {item.size !== undefined ? item.size : '없음'} /{' '}
                     {item.color !== undefined ? (
                       <span
                         style={{
-                          width: "10px",
+                          width: '10px',
                           backgroundColor: item.color,
-                          display: "inline-block",
-                          aspectRatio: "1/1",
+                          display: 'inline-block',
+                          aspectRatio: '1/1',
                         }}
                       ></span>
                     ) : (
-                      "없음"
+                      '없음'
                     )}
                   </td>
                   <td>2,500원</td>
@@ -154,9 +162,12 @@ const CartPage = ({ cartItems, setCartItems }) => {
                     <button
                       onClick={() => {
                         let copy = [...cartItems];
+
                         copy.splice(index, 1);
+
                         setCartItems(copy);
-                        localStorage.setItem("cart", JSON.stringify(copy));
+
+                        localStorage.setItem('cart', JSON.stringify(copy));
                       }}
                     >
                       <i className="xi-close"></i>삭제
@@ -176,14 +187,27 @@ const CartPage = ({ cartItems, setCartItems }) => {
             <b>선택상품을</b>
             <button
               onClick={() => {
+                let copy = [...cartItems];
+                let copy2 = [...itemCheck];
+                let copy3 = [...selectedCartItems];
+                console.log(copy, copy2, copy3);
+
                 selectedCartItems.forEach((a, i) => {
                   if (a !== null && a !== undefined) {
-                    let copy = [...cartItems];
-                    copy.splice(i, 1);
-                    setCartItems(copy);
-                    localStorage.setItem("cart", JSON.stringify(copy));
+                    let findIndex = copy.findIndex((b) => {
+                      return a.cartId === b.cartId;
+                    });
+
+                    copy.splice(findIndex, 1);
+                    copy2.splice(findIndex, 1);
+                    copy3.splice(findIndex, 1);
                   }
                 });
+                setCartItems(copy);
+                setItemCheck(copy2);
+                setSelectedCartItems(copy3);
+
+                localStorage.setItem('cart', JSON.stringify(copy));
               }}
             >
               <i className="xi-close"></i>삭제하기
@@ -191,7 +215,7 @@ const CartPage = ({ cartItems, setCartItems }) => {
             <button
               onClick={() => {
                 setCartItems([]);
-                localStorage.setItem("cart", JSON.stringify([]));
+                localStorage.setItem('cart', JSON.stringify([]));
               }}
             >
               장바구니비우기
