@@ -1,4 +1,4 @@
-# MOANI 가구 쇼핑몰 페이지 (카페24 디자인,폰트,이미지,상품 등 참고)
+![image](https://github.com/user-attachments/assets/7c1cd860-1b3a-4366-b0ee-8a924250dbc6)# MOANI 가구 쇼핑몰 페이지 (카페24 디자인,폰트,이미지,상품 등 참고)
 <br>
 구성 : 메인페이지, 로그인 페이지, 회원가입 페이지, 검색 페이지, SHOP 페이지, LOOKBOOK 페이지, 상품상세 페이지, 리뷰 페이지, 리뷰 상세 페이지
 
@@ -15,7 +15,7 @@
 
 | main-visual                                                                                                   |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/mainVisual.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/mainVisual.png)
 
 ####   [ 주요 기능 ]
  * 팝업. 텍스트 자동 전환 기능
@@ -25,10 +25,10 @@
 
 | 헤더                                                                                                    |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/header1.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/header1.png)
 
-![image](https://github.com/kkh12345/kkh5/blob/main/header2.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/header3.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/header2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/header3.png)
 
 
 ####   [ 주요 기능 ]
@@ -41,12 +41,12 @@
 
 | Funiture, Best Item, Home Styling Item, Interior, New In                                                                                                  |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/funiture.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/funiture.png)
 
-![image](https://github.com/kkh12345/kkh5/blob/main/homestyle.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/bestItem.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/interior.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/newIn.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/homestyle.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/bestItem.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/interior.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/newIn.png)
 
 ####   [ 주요 기능 ]
  * 상품 카드,카드 정렬 방식이 각 섹션마다 조금씩 다름
@@ -58,7 +58,7 @@
 
 | Review                                                                                                    |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/review.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/review.png)
 
 
 
@@ -72,7 +72,7 @@
 
 | 메인 페이지 태블릿                                                                                                   |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/tablet.gif)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/tablet.gif)
 
 
  <br><br>
@@ -82,7 +82,7 @@
 
 | Search                                                                                                |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/search.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/search.png)
 
 
 
@@ -99,8 +99,8 @@
 
 | LookBook                                                                                                |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/lookbook1.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/lookbook2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/lookbook1.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/lookbook2.png)
 
 
 
@@ -115,8 +115,8 @@
 
 | Join                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/join.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/join2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/join.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/join2.png)
 
 
 
@@ -133,9 +133,9 @@
 
 | Login                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/login1.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/login2.png)
-![image](https://github.com/kkh12345/kkh5/blob/main/login3.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/login1.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/login2.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/login3.png)
 
 
 
@@ -151,7 +151,7 @@
 
 | SHOP                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------- |
-![image](https://github.com/kkh12345/kkh5/blob/main/shop.png)
+![image](https://github.com/kkh12345/cafe24_moani/blob/main/shop.png)
 
 
 
@@ -174,7 +174,7 @@
 - 개발 환경 : <img src="https://img.shields.io/badge/windows11-0078D6?style=flat-square&logo=windows10&logoColor=white"/>
 - 사용 프로그램 : <img src="https://img.shields.io/badge/Vs code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>  <img src="https://img.shields.io/badge/figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
 - 사용된 기술 :
-  <img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=css3&logoColor=white">  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=Swiper&logoColor=white">
+ ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white) <img src="https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=Swiper&logoColor=white">
 
   <br><br>
 
