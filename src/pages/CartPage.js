@@ -121,7 +121,6 @@ const CartPage = ({ cartItems, setCartItems }) => {
                       type="number"
                       defaultValue={item.count}
                       onChange={(e) => {
-                        sumPriceFn();
                         let copy = [...cartItems];
 
                         if (e.target.value <= 0) {
@@ -213,6 +212,9 @@ const CartPage = ({ cartItems, setCartItems }) => {
             </button>
             <button
               onClick={() => {
+                console.log(1);
+                selectAllRef.current.checked = false;
+                console.log(itemCheck, selectedCartItems);
                 setCartItems([]);
                 localStorage.setItem('cart', JSON.stringify([]));
               }}
