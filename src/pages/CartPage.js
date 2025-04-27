@@ -190,8 +190,7 @@ const CartPage = ({ cartItems, setCartItems }) => {
                 let copy = [...cartItems];
                 let copy2 = [...itemCheck];
                 let copy3 = [...selectedCartItems];
-                console.log(copy, copy2, copy3);
-
+                selectAllRef.current.checked = false;
                 selectedCartItems.forEach((a, i) => {
                   if (a !== null && a !== undefined) {
                     let findIndex = copy.findIndex((b) => {
