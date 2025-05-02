@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router";
-import "./ProductInfo.css";
+import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router';
+import './ProductInfo.css';
 
-import React from "react";
-import { Fragment } from "react";
+import React from 'react';
+import { Fragment } from 'react';
 
 const ProductInfo = ({ id, setCartItems, cartItems }) => {
   const zoomBoxRef = useRef(null);
@@ -21,7 +21,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
     size: [],
   });
 
-  let get = JSON.parse(localStorage.getItem("products"));
+  let get = JSON.parse(localStorage.getItem('products'));
   useEffect(() => {
     if (selectedOption.length > 0 && currentProduct !== null) {
       let priceSum = 0;
@@ -45,7 +45,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
       let findIndex = get.findIndex((a) => {
         return a.productId === parseInt(id);
       });
-      localStorage.setItem("products", JSON.stringify(get));
+      localStorage.setItem('products', JSON.stringify(get));
       setCurrentProduct(get[findIndex]);
       setLike(get[findIndex].isInterested);
     }
@@ -56,7 +56,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
         return a.productId === parseInt(id);
       });
       get[findIndex].isInterested = like;
-      localStorage.setItem("products", JSON.stringify(get));
+      localStorage.setItem('products', JSON.stringify(get));
     }
   }, [like]);
   return (
@@ -95,8 +95,10 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
               }
               setTimeout(() => {
                 bigImageRef.current.children[0].style.transform = `scale(1.5) translate(${
-                  ((positionX / imgWrapWidth - 0.5) * 100 * 2) / 3
-                }%,${((positionY / imgWrapHeight - 0.5) * 100 * 2) / 3}%)`;
+                  (-1 * (positionX / imgWrapWidth - 0.5) * 100 * 2) / 3
+                }%,${
+                  (-1 * ((positionY / imgWrapHeight - 0.5) * 100 * 2)) / 3
+                }%)`;
                 zoomBoxRef.current.style.top = `${positionY}px`;
                 zoomBoxRef.current.style.left = `${positionX}px`;
               }, 50);
@@ -105,7 +107,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
         >
           <div
             style={{
-              display: imgWrapMouseIn ? "block" : "none",
+              display: imgWrapMouseIn ? 'block' : 'none',
             }}
             className="zoom-box"
             ref={zoomBoxRef}
@@ -118,7 +120,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
 
           <img
             style={{
-              display: imgWrapMouseIn ? "none" : "block",
+              display: imgWrapMouseIn ? 'none' : 'block',
             }}
             className="let-mouse-hover"
             src="/img/home/let-mousehover.gif"
@@ -128,7 +130,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
             className="big-img-wrap"
             ref={bigImageRef}
             style={{
-              display: imgWrapMouseIn ? "block" : "none",
+              display: imgWrapMouseIn ? 'block' : 'none',
             }}
           >
             <img
@@ -141,7 +143,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
         <div className="interest-icon-wrap">
           <button
             style={{
-              color: like ? "red" : "#555555",
+              color: like ? 'red' : '#555555',
             }}
             onClick={() => {
               setLike(!like);
@@ -150,8 +152,8 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
             <img
               src={
                 like
-                  ? "/img/home/interest-icon-black.png"
-                  : "/img/home/interest-icon-white.png"
+                  ? '/img/home/interest-icon-black.png'
+                  : '/img/home/interest-icon-white.png'
               }
               alt="좋아요"
             />
@@ -286,7 +288,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
                               setSelectedOption(copy);
                             }
                           }}
-                        />{" "}
+                        />{' '}
                         <span className="delete"></span>
                       </div>
                       <div className="right">
@@ -315,11 +317,11 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
           <div className="cart-button-wrap">
             <button
               onClick={() => {
-                let getCart = JSON.parse(localStorage.getItem("cart"));
+                let getCart = JSON.parse(localStorage.getItem('cart'));
                 let requirementChecked = true;
                 let NoOptionsObj = {
                   count: 1,
-                  cartId: "NoOptions",
+                  cartId: 'NoOptions',
                   id: parseInt(id),
                 };
                 if (
@@ -328,7 +330,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
                 ) {
                   if (
                     window.confirm(
-                      "장바구니에 상품을 담으시겠습니까? (중복된 상품이 있으면 수량만 증가함)"
+                      '장바구니에 상품을 담으시겠습니까? (중복된 상품이 있으면 수량만 증가함)'
                     )
                   ) {
                     if (getCart.length === 0) {
@@ -360,14 +362,14 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
                   if (requirementChecked) {
                     if (
                       window.confirm(
-                        "장바구니에 상품을 담으시겠습니까? (중복된 상품이 있으면 수량만 증가함)"
+                        '장바구니에 상품을 담으시겠습니까? (중복된 상품이 있으면 수량만 증가함)'
                       )
                     ) {
                       if (getCart.length === 0) {
                         selectedOption.forEach((a) => {
                           getCart.push(a);
                         });
-                        localStorage.setItem("cart", JSON.stringify(getCart));
+                        localStorage.setItem('cart', JSON.stringify(getCart));
                         setCartItems(getCart);
                       } else {
                         selectedOption.forEach((a) => {
@@ -384,7 +386,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
                       }
                     }
                   } else {
-                    alert("필수 옵션을 선택해주세요");
+                    alert('필수 옵션을 선택해주세요');
                   }
                   for (let key in radioRef.current) {
                     radioRef.current[key].forEach((a) => {
@@ -392,7 +394,7 @@ const ProductInfo = ({ id, setCartItems, cartItems }) => {
                     });
                   }
                 }
-                localStorage.setItem("cart", JSON.stringify(getCart));
+                localStorage.setItem('cart', JSON.stringify(getCart));
                 setCartItems(getCart);
                 setSelectedOption([]);
                 setPriceSum(0);
@@ -428,7 +430,7 @@ const ProductSizeBox = ({ product, currentProduct, radioRef }) => {
                   <React.Fragment key={i}>
                     <input
                       ref={(el) => {
-                        if (product === "currentProduct") {
+                        if (product === 'currentProduct') {
                           radioRef.current.size[i] = el;
                         }
                       }}
@@ -455,7 +457,7 @@ const ProductSizeBox = ({ product, currentProduct, radioRef }) => {
             : null}
         </div>
         <span>
-          [필수] {selectedSize !== null ? selectedSize : "옵션을 선택해 주세요"}
+          [필수] {selectedSize !== null ? selectedSize : '옵션을 선택해 주세요'}
         </span>
       </div>
     </div>
@@ -481,12 +483,12 @@ const ProductColorBox = ({
                   <React.Fragment key={i}>
                     <input
                       ref={(el) => {
-                        if (product === "currentProduct") {
+                        if (product === 'currentProduct') {
                           radioRef.current.color[i] = el;
                         }
                       }}
                       onChange={(e) => {
-                        if (product === "currentProduct") {
+                        if (product === 'currentProduct') {
                           let copy = [...selectedOption];
 
                           if (radioRef.current.size.length === 0) {
@@ -525,7 +527,7 @@ const ProductColorBox = ({
                                 copy[findIndex].count += 1;
                               }
                             } else {
-                              alert("사이즈를 먼저 선택해주세요");
+                              alert('사이즈를 먼저 선택해주세요');
                               radioRef.current.color.forEach((a) => {
                                 a.checked = false;
                               });
@@ -548,8 +550,8 @@ const ProductColorBox = ({
         </div>
 
         <span>
-          [필수]{" "}
-          {selectedColor !== null ? selectedColor : "옵션을 선택해 주세요"}
+          [필수]{' '}
+          {selectedColor !== null ? selectedColor : '옵션을 선택해 주세요'}
         </span>
       </div>
     </div>
@@ -592,9 +594,9 @@ const AdditionalProducts = ({ currentProduct, get, radioRef }) => {
       <div
         className="additional-products-list"
         style={{
-          maxHeight: isShow ? "1000px" : "0",
-          overflow: "hidden",
-          transition: "max-height .3s",
+          maxHeight: isShow ? '1000px' : '0',
+          overflow: 'hidden',
+          transition: 'max-height .3s',
         }}
       >
         <ul>
